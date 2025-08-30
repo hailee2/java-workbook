@@ -8,6 +8,7 @@ public class Q3 {
         String s = sc.next();
         try {
             // TODO: s를 int로 변환 후 2 곱해 출력
+            System.out.println(Integer.parseInt(s) *2);
         } catch (NumberFormatException e) {
             System.out.println("Invalid number");
         }
