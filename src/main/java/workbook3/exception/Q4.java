@@ -10,10 +10,25 @@ public class Q4 {
         String op = sc.next();
         try {
             // TODO: op에 따라 계산 및 출력
+            if(("+").equals(op)){
+                System.out.println(a+b);
+            }else if(("-").equals(op)){
+                if(a>=b){
+                    System.out.println(a-b);
+                }else{
+                    System.out.println(b-a);
+                }
+            }else if(("*").equals(op)){
+                System.out.println(a*b);
+            }else if(("/").equals(op)){
+                System.out.println(a/b);
+            }else{
+                throw new Exception("Invalid operator");
+            }
         } catch (ArithmeticException e) {
             System.out.println("Division by zero");
         } catch (Exception e) {
-            System.out.println("Invalid operator");
+            System.out.println(e.getMessage());
         }
     }
 }
