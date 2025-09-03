@@ -14,11 +14,11 @@ public class Q4 {
         }
         // TODO: map의 키와 값 목록 출력
         //keySet() values() 메서드 사용
-        for (String s : map.keySet()) {
+        for (String s : map.keySet()) {     //keySet() : 키만 가져올 때, Set으로 반환
             System.out.print(s);
         }
         System.out.println();
-        for (Integer value : map.values()) {
+        for (Integer value : map.values()) {        //values() : 값만 가져올 때, Collection으로 반환
             System.out.print(value);
         }
         sc.close();
