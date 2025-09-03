@@ -13,5 +13,14 @@ public class Q4 {
             map.put(sc.next(), sc.nextInt());
         }
         // TODO: map의 키와 값 목록 출력
+        //keySet() values() 메서드 사용
+        for (String s : map.keySet()) {
+            System.out.print(s);
+        }
+        System.out.println();
+        for (Integer value : map.values()) {
+            System.out.print(value);
+        }
+        sc.close();
     }
 }
