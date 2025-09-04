@@ -12,8 +12,8 @@ public class Q2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] strArr = {sc.next(), sc.next()};           //문자열 2개 입력받아서 문자 배열 strArr에 저장
-        Integer[] intArr = {sc.nextInt(), sc.nextInt()};    //Integer 2개 입력받아 Integer배열 intArr에 저장
+        String[] strArr = {sc.next(), sc.next()};           //문자열 2개 입력받아서 문자열 배열 strArr에 저장
+        Integer[] intArr = {sc.nextInt(), sc.nextInt()};    //Integer 2개 입력받아 Integer 배열 intArr에 저장
         swap(strArr, 0, 1);                             //swap() 메서드 실행 : strArr[0]과 strArr[1] 교환
         swap(intArr, 0, 1);                             //swap() 메서드 실행 : intArr[0]과 intArr[1] 교환
         System.out.println(strArr[0] + " " + strArr[1]);    //strArr[0], strArr[1] 값 출력 -> 값이 swap됨
