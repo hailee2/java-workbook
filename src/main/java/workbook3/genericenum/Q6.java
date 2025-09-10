@@ -24,8 +24,8 @@ public class Q6 {
         String k2 = sc.next();
         String v2 = sc.next();
         // TODO: 위 입력값에 알맞은 타입의 Pair 제네릭 클래스 선언
-        Pair pair1 = new Pair<>(k1,v1);
-        Pair pair2 = new Pair<>(k2,v2);
+        Pair<String, Integer> pair1 = new Pair<>(k1,v1);
+        Pair<String, String> pair2 = new Pair<>(k2,v2);
         // TODO: 선언한 제네릭 객체 2개 출력
         System.out.println(pair1);      //println()이 pair1.toString()을 호출
         System.out.println(pair2);
